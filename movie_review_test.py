@@ -1,12 +1,12 @@
+import nltk
 from nltk.corpus import movie_reviews
-import random
 from nltk import FreqDist
 from nltk.classify import SklearnClassifier
 from sklearn.naive_bayes import MultinomialNB, BernoulliNB
-import nltk
-import pickle
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.svm import SVC
+import pickle
+import random
 
 
 dataset = [(list(movie_reviews.words(fileid)), category)
